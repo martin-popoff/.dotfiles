@@ -1,0 +1,77 @@
+{
+    "inline_completions": {
+        "disabled_globs": [
+            ".env",
+            "src/exercises/*.rs",
+            "exercises/*.rs",
+            "src/robot_sim.rs"
+        ]
+    },
+    "vim_mode": true,
+    "assistant": {
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-4o"
+        },
+        "version": "2",
+        "dock": "left"
+    },
+    "theme": "Catppuccin Mocha",
+    "project_panel": {
+        "dock": "right"
+    },
+    "languages": {
+        "JavaScript": {
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            }
+        },
+        "TypeScript": {
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            }
+        },
+        "TSX": {
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            }
+        },
+        "Python": {
+            "format_on_save": "on"
+        }
+    },
+    "inlay_hints": {
+        "enabled": true
+    },
+    "lsp": {
+        "vtsls": {
+            "initialization_options": {
+                "typescript": {
+                    "preferences": {
+                        "importModuleSpecifier": "non-relative"
+                    }
+                }
+            }
+        },
+        "rust-analyzer": {
+            "initialization_options": {
+                "checkOnSave": {
+                    "command": "clippy" // rust-analyzer.checkOnSave.command
+                }
+            }
+        }
+    },
+    "relative_line_numbers": true,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "soft_wrap": "editor_width",
+    "hard_tabs": false,
+    "tab_size": 4,
+    "format_on_save": "on",
+    "ui_font_size": 14,
+    "buffer_font_size": 13,
+    "buffer_font_family": "Zed Mono",
+    "ui_font_family": "Zed Mono"
+}
